@@ -46,17 +46,8 @@ Target Variable:
 
 * Churn: Indicates whether the customer churned (True) or stayed (False).
 
-## stakeholder audience and dataset choice 
-Marketing and Customer Retention Teams:
-
-These teams are responsible for designing and executing strategies to retain customers. They need insights into which customers are at risk of churning and the factors driving this behavior to create targeted campaigns and personalized offers.
-Product Management Team:This team can use the insights from the model to improve product features, pricing, or service offerings. Understanding the reasons behind customer churn helps them to refine the product and reduce churn risk.
-
-Customer Support Team: As the frontline of customer interaction, the support team can benefit from knowing which customers are likely to churn. They can prioritize outreach and provide high-quality support to these customers, potentially mitigating churn.
-
-Executive Leadership:Executives need a high-level understanding of customer churn to make informed strategic decisions. They are interested in the overall impact of churn on the business and the effectiveness of the strategies in place to mitigate it.
-
-Data Science and Analytics Team:This team is responsible for building and maintaining the churn prediction models. They need detailed insights into the model's performance and limitations to continue refining and improving it.
+## Stakeholder audience 
+The primary stakeholders are business decision-makers, customer relationship managers, and marketing teams. These stakeholders are interested in actionable insights to improve customer retention and reduce churn. The models should provide clear, interpretable results to guide strategic decisions.
 
 #### Dataset Choice
 The dataset used in this analysis consists of customer information from SyriaTel, a telecommunications company. The dataset includes various features that could influence customer churn, such as:
@@ -105,7 +96,27 @@ AUC-PR: Evaluates performance with respect to the positive class.
 Logistic Regression: Achieved an ROC AUC Score of 0.6788 and an AUC-PR of 0.2834.
 Decision Tree: Provided competitive results with high interpretability.
 
+
+Predictive Recommendations
+Contexts for Model Usefulness
+Effective Situations:
+When there is a need to identify at-risk customers for targeted retention strategies.
+During marketing campaigns to focus efforts on high-risk customer segments.
+For improving customer service by identifying common issues faced by churn-prone customers.
+
+Less Effective Situations:
+
+In scenarios with rapidly changing customer behavior or where customer data is incomplete or outdated.
+When the dataset does not accurately represent the current customer base or market conditions.
+
+Business Modifications
+Input Variables:Enhance Customer Experience: Focus on improving factors that are significant predictors of churn, such as reducing monthly charges or improving service quality.
+Targeted Interventions: Use the model’s insights to design personalized offers or loyalty programs for high-risk customers.
+Continuous Monitoring: Regularly update the model with new data to adapt to changing customer behaviors and market trends.
+
+
 ## Conclusion
+
 The decision tree model offers a clear advantage in interpretability, showing how different features influence churn decisions. While the logistic regression model provides robust performance metrics, the decision tree’s visual nature allows for more straightforward explanations to stakeholders.
 
 Recommendations
