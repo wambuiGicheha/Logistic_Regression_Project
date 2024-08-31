@@ -113,7 +113,7 @@ Overfitting
 
 Generalization to Unseen Data
     Decision Tree: Despite overfitting, the decision tree model still generalizes reasonably well to the test set with an accuracy of 0.91.
-    
+
     Logistic Regression: The logistic regression model struggles to generalize, as indicated by its low accuracy, precision, and F1-score on the test set.
 
 ROC-AUC: Assesses the model’s ability to distinguish between classes.
@@ -133,18 +133,9 @@ Monitor and Adjust Model Performance: Continuously monitor the decision tree's p
 
 Combine Models for Improved Predictions: Consider using an ensemble approach by combining the decision tree and logistic regression models to leverage the strengths of both, potentially improving overall prediction accuracy and robustness.
 
-## Business Recommendations
-
-Input Variables:Enhance Customer Experience: Focus on improving factors that are significant predictors of churn, such as reducing monthly charges or improving service quality.
-Targeted Interventions: Use the model’s insights to design personalized offers or loyalty programs for high-risk customers.
-Continuous Monitoring: Regularly update the model with new data to adapt to changing customer behaviors and market trends.
-
-
-
 ## Conclusion
 
 The decision tree model offers a clear advantage in interpretability, showing how different features influence churn decisions. While the logistic regression model provides robust performance metrics, the decision tree’s visual nature allows for more straightforward explanations to stakeholders.
-
 
 
 ## Business Recommendations
