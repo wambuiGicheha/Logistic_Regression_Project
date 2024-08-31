@@ -116,9 +116,6 @@ Generalization to Unseen Data
 
     Logistic Regression: The logistic regression model struggles to generalize, as indicated by its low accuracy, precision, and F1-score on the test set.
 
-ROC-AUC: Assesses the model’s ability to distinguish between classes.
-
-AUC-PR: Evaluates performance with respect to the positive class.
 
 * Results
 Decision Tree: Shows signs of overfitting but still performs well on unseen data. It has better overall accuracy, precision, recall, and F1-score compared to logistic regression.
