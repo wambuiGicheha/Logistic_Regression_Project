@@ -97,17 +97,14 @@ Logistic Regression: Achieved an ROC AUC Score of 0.6788 and an AUC-PR of 0.2834
 Decision Tree: Provided competitive results with high interpretability.
 
 
+
+
 Predictive Recommendations
-Contexts for Model Usefulness
-Effective Situations:
-When there is a need to identify at-risk customers for targeted retention strategies.
-During marketing campaigns to focus efforts on high-risk customer segments.
-For improving customer service by identifying common issues faced by churn-prone customers.
+Use Decision Tree for Immediate Predictions: Implement the decision tree model for real-time churn predictions, as it offers higher accuracy and recall for identifying customers at risk of churning.
 
-Less Effective Situations:
+Monitor and Adjust Model Performance: Continuously monitor the decision tree's predictions and update the model periodically to account for new data trends, reducing the risk of overfitting.
 
-In scenarios with rapidly changing customer behavior or where customer data is incomplete or outdated.
-When the dataset does not accurately represent the current customer base or market conditions.
+Combine Models for Improved Predictions: Consider using an ensemble approach by combining the decision tree and logistic regression models to leverage the strengths of both, potentially improving overall prediction accuracy and robustness.
 
 Business Modifications
 Input Variables:Enhance Customer Experience: Focus on improving factors that are significant predictors of churn, such as reducing monthly charges or improving service quality.
@@ -119,7 +116,12 @@ Continuous Monitoring: Regularly update the model with new data to adapt to chan
 
 The decision tree model offers a clear advantage in interpretability, showing how different features influence churn decisions. While the logistic regression model provides robust performance metrics, the decision tree’s visual nature allows for more straightforward explanations to stakeholders.
 
-Recommendations
-Implementation: Deploy the model that best fits the business needs, considering both accuracy and ease of interpretation.
-Retention Strategies: Use model insights to identify at-risk customers and implement targeted retention measures.
-Ongoing Evaluation: Regularly update and monitor the model to ensure it continues to provide accurate predictions as customer behavior evolves.
+
+
+## Business Recommendations
+
+1. Leverage the Decision Tree Model
+
+2. Target High-Risk Customers
+
+3. Refine Marketing Strategies
