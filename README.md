@@ -87,34 +87,36 @@ Metrics
 Models were evaluated using:
 
 Accuracy: Measures the overall correctness of the model.
-    Decision Tree: The decision tree model achieves a training set accuracy of 1.0000, which is a clear sign of overfitting, and a test set accuracy of 0.91. This means that despite overfitting, the model still generalizes relatively well to unseen data.
+Decision Tree: The decision tree model achieves a training set accuracy of 1.0000, which is a clear sign of overfitting, and a test set accuracy of 0.91. This means that despite overfitting, the model still generalizes relatively well to unseen data.
 
-    Logistic Regression: The logistic regression model has an overall accuracy of 0.53 on the test set. This is significantly lower than the decision tree's test accuracy, indicating that the logistic regression model struggles more with correctly classifying both classes.
+Logistic Regression: The logistic regression model has an overall accuracy of 0.53 on the test set. This is significantly lower than the decision tree's test accuracy, indicating that the logistic regression model struggles more with correctly classifying both classes.
 
 Recall: Measures the proportion of true positives among actual positives.
 
-    Decision Tree: The recall for the positive class is 0.7133, meaning that the model correctly identifies 71.33% of the actual positive instances. This suggests the model is fairly good at detecting positives but not perfect.
+Decision Tree: The recall for the positive class is 0.7133, meaning that the model correctly identifies 71.33% of the actual positive instances. This suggests the model is fairly good at detecting positives but not perfect.
 
-    Logistic Regression: The recall for the positive class is 0.73, similar to the decision tree. This means the logistic regression model is somewhat effective at identifying positive instances, but this comes at the cost of precision.
+Logistic Regression: The recall for the positive class is 0.73, similar to the decision tree. This means the logistic regression model is somewhat effective at identifying positive instances, but this comes at the cost of precision.
 
 Precision: Indicates the proportion of true positives among predicted positives.
-    Decision Tree: The precision for the positive class (True) is 0.6456, meaning that 64.56% of the instances labeled as positive are actually positive. This is a moderate level of precision.
-    Logistic Regression: The precision for the positive class is 0.19, which is quite low, indicating that the model often misclassifies negative instances as positive.
+
+Decision Tree: The precision for the positive class (True) is 0.6456, meaning that 64.56% of the instances labeled as positive are actually positive. This is a moderate level of precision.
+
+Logistic Regression: The precision for the positive class is 0.19, which is quite low, indicating that the model often misclassifies negative instances as positive.
 
 F1 Score: Balances precision and recall.
-    Decision Tree: The F1-score for the positive class is 0.6777, which balances the trade-off between precision and recall. This score suggests a moderate performance in identifying positive instances.
+Decision Tree: The F1-score for the positive class is 0.6777, which balances the trade-off between precision and recall. This score suggests a moderate performance in identifying positive instances.
 
-    Logistic Regression: The F1-score for the positive class is 0.30, indicating a much weaker performance compared to the decision tree. The low F1-score reflects the poor precision despite a decent recall.
+Logistic Regression: The F1-score for the positive class is 0.30, indicating a much weaker performance compared to the decision tree. The low F1-score reflects the poor precision despite a decent recall.
 
 Overfitting
-    Decision Tree: The perfect accuracy on the training set is a red flag for overfitting, meaning the model has learned the training data too well, capturing noise and details that don't generalize well to new data.
+Decision Tree: The perfect accuracy on the training set is a red flag for overfitting, meaning the model has learned the training data too well, capturing noise and details that don't generalize well to new data.
 
-    Logistic Regression: There is no indication of overfitting here; in fact, the model may be underfitting since its performance is generally poor on the test set, particularly in terms of precision and F1-score.
+Logistic Regression: There is no indication of overfitting here; in fact, the model may be underfitting since its performance is generally poor on the test set, particularly in terms of precision and F1-score.
 
 Generalization to Unseen Data
-    Decision Tree: Despite overfitting, the decision tree model still generalizes reasonably well to the test set with an accuracy of 0.91.
+Decision Tree: Despite overfitting, the decision tree model still generalizes reasonably well to the test set with an accuracy of 0.91.
 
-    Logistic Regression: The logistic regression model struggles to generalize, as indicated by its low accuracy, precision, and F1-score on the test set.
+Logistic Regression: The logistic regression model struggles to generalize, as indicated by its low accuracy, precision, and F1-score on the test set.
 
 
 * Results
@@ -123,7 +125,7 @@ Decision Tree: Shows signs of overfitting but still performs well on unseen data
 Logistic Regression: Struggles with accuracy, precision, and F1-score, particularly due to class imbalance. It does not overfit, but its generalization to new data is poor.
 
 
-Predictive Recommendations
+* Predictive Recommendations
 Use Decision Tree for Immediate Predictions: Implement the decision tree model for real-time churn predictions, as it offers higher accuracy and recall for identifying customers at risk of churning.
 
 Monitor and Adjust Model Performance: Continuously monitor the decision tree's predictions and update the model periodically to account for new data trends, reducing the risk of overfitting.
