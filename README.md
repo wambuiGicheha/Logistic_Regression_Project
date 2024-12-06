@@ -1,5 +1,4 @@
-# Comparative Analysis of Logistic Regression and Decision Tree Models
-for Predicting Customer Churn
+# Comparative Analysis of Logistic Regression and Decision Tree Models for Predicting Customer Churn
 
 ## Overview
 In this project, I developed and evaluated two machine learning models—Logistic Regression and Decision Tree—to predict customer churn. The primary goal was to identify patterns and features contributing to customer attrition, enabling the business to proactively retain customers.
